@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Manager</title>
+
+    <link href="assets/css/musicmanager.css" rel="stylesheet"/>
+    <link href="https://streamical.media/FeatherFramework/css/streamical-feather.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="mm-page-container">
+
+        <header class="mm-page-header">
+
+            <div class="mm-page-header-logo">
+                <img id="page-icon" src="assets/img/streamical_icon.svg" alt="Streamical Icon" />
+                <h1 id="page-title">Music Manager</h1>
+            </div>
+
+            <nav class="mm-page-header-navigation">
+                <a href="#" onclick="toggleMenu()" id="mobile-menu-button"><i class="sfi sfi-menu sfi-inverted" id="menu-icon"></i></a>
+
+                <ul class="mm-menu" id="navigation-menu">
+                    <li>
+                        <div class="mm-navigation-quick-actions">
+                            <i class="sfi sfi-plus sfi-inverted"></i>
+                            <i class="sfi sfi-chevron-down sfi-inverted"></i>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="mm-user-info-container">
+                                <img src="assets/img/image.jpg" alt="Avatar of Lea Gärtner">
+                                <i class="sfi sfi-chevron-down sfi-inverted"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <main class="mm-page-content">
+            <nav class="mm-page-content-sidebar">
+                <ul class="mm-menu mm-page-content-navigation">
+                    <li class="mm-page-content-navigation-item" onclick='toggleSubMenu("dashboard")' id="dashboard">
+                        <a href="#">
+                            <i class="sfi sfi-inverted sfi-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+
+                        <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed">
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">Homepage</a>
+                            </li>
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">Statistics</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="mm-page-content-navigation-item" onclick='toggleSubMenu("albums")' id="albums">
+                        <a href="#">
+                            <i class="sfi sfi-inverted sfi-disc"></i>
+                            <span>Albums</span>
+                        </a>
+
+                        <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed">
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">View all</a>
+                            </li>
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">Add new</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mm-page-content-navigation-item" onclick='toggleSubMenu("artists")' id="artists">
+                        <a href="#">
+                            <i class="sfi sfi-inverted sfi-users"></i>
+                            <span>Artists</span>
+                        </a>
+
+                        <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed" >
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">View all</a>
+                            </li>
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">Add new</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mm-page-content-navigation-item" onclick='toggleSubMenu("songs")' id="songs">
+                        <a href="#">
+                            <i class="sfi sfi-inverted sfi-mic"></i>
+                            <span>Songs</span>
+                        </a>
+
+                        <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed" >
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">View all</a>
+                            </li>
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">Add new</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mm-page-content-navigation-item" onclick='toggleSubMenu("user")' id="user">
+                        <a href="#">
+                            <i class="sfi sfi-inverted sfi-users"></i>
+                            <span>User</span>
+                        </a>
+
+                        <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed" >
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">View all</a>
+                            </li>
+
+                            <li class="mm-mobile-submenu-item">
+                                <a href="#">Add new</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mm-page-main-content">
+
+                <div class="mm-page-widget">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="mm-page-widget">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="mm-page-widget">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="mm-page-widget">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="mm-page-widget">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="mm-page-widget">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="mm-page-footer">
+        </footer>
+
+    </div>
+
+    <nav class="mm-mobile-menu mm-mobile-menu-closed" id="mobile-menu">
+        <ul class="mm-menu mm-mobile-menu-container">
+
+            <li class="mm-mobile-menu-item" onclick='toggleSubMenu("user-info")' id="user-info">
+                <a href="#">
+                    <div class="mm-user-info-container">
+                        <img src="assets/img/image.jpg" alt="Avatar of Lea Gärtner">
+                        <h2>Lea Gärtner</h2>
+                    </div>
+                </a>
+
+                <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed">
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Mein Profil bearbeiten</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Administration</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Abmelden</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="mm-mobile-menu-item" onclick='toggleSubMenu("dashboard")' id="dashboard">
+                <a href="#">Dashboard</a>
+
+                <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed">
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Homepage</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Statistics</a>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="mm-mobile-menu-item" onclick='toggleSubMenu("albums")' id="albums">
+                <a href="#">Albums</a>
+
+                <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed">
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">View all</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Add new</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="mm-mobile-menu-item" onclick='toggleSubMenu("artists")' id="artists">
+                <a href="#">Artists</a>
+
+                <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed" >
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">View all</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Add new</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="mm-mobile-menu-item" onclick='toggleSubMenu("songs")' id="songs">
+                <a href="#">Songs</a>
+
+                <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed" >
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">View all</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Add new</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="mm-mobile-menu-item" onclick='toggleSubMenu("user")' id="user">
+                <a href="#">User</a>
+
+                <ul class="mm-menu mm-mobile-submenu mm-mobile-menu-closed" >
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">View all</a>
+                    </li>
+
+                    <li class="mm-mobile-submenu-item">
+                        <a href="#">Add new</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="mobile-menu-close">
+            <a id="mobile-menu-close-btn" href="#" onclick="toggleMenu()">
+                <i class="sfi sfi-x sfi-inverted" ></i>
+            </a>
+        </div>
+
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            if(document.getElementById("mobile-menu").classList[1] === "mm-mobile-menu-open") {
+                document.getElementById("mobile-menu").classList.replace("mm-mobile-menu-open", "mm-mobile-menu-closed");
+            } else {
+                document.getElementById("mobile-menu").classList.replace("mm-mobile-menu-closed", "mm-mobile-menu-open");
+            }
+        }
+
+        function toggleSubMenu(element) {
+
+            let subMenu = document.querySelector("#"+element + "  > .mm-mobile-submenu");
+            console.log(element)
+
+            if(subMenu.classList[2] === "mm-mobile-menu-closed") {
+                subMenu.classList.remove("mm-mobile-menu-closed")
+            } else {
+                subMenu.classList.add("mm-mobile-menu-closed")
+            }
+        }
+    </script>
+</body>
+</html>
