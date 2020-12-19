@@ -1,6 +1,7 @@
-MIT License
 
-Copyright (c) 2020 Schneider, Benjamin & Wolfhard, Elias GbR
+The MIT License (MIT)
+
+Copyright (c) 2020 Benjamin Schneider
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

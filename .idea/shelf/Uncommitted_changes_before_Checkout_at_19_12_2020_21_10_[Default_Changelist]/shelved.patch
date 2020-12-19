@@ -1,0 +1,393 @@
+Index: src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport ReactDOM from 'react-dom';\r\nimport './index.css';\r\nimport App from './App';\r\nimport reportWebVitals from './reportWebVitals';\r\n\r\nReactDOM.render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>,\r\n  document.getElementById('root')\r\n);\r\n\r\n// If you want to start measuring performance in your app, pass a function\r\n// to log results (for example: reportWebVitals(console.log))\r\n// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals\r\nreportWebVitals();\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/index.js b/src/index.js
+--- a/src/index.js	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ b/src/index.js	(date 1608408483535)
+@@ -1,12 +1,9 @@
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+-import './index.css';
+-import App from './App';
+ import reportWebVitals from './reportWebVitals';
+ 
+ ReactDOM.render(
+   <React.StrictMode>
+-    <App />
+   </React.StrictMode>,
+   document.getElementById('root')
+ );
+Index: src/logo.svg
+===================================================================
+diff --git a/src/logo.svg b/src/logo.svg
+deleted file mode 100644
+--- a/src/logo.svg	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ /dev/null	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
+@@ -1,1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3"><g fill="#61DAFB"><path d="M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z"/><circle cx="420.9" cy="296.5" r="45.7"/><path d="M520.5 78.1z"/></g></svg>
+\ No newline at end of file
+Index: src/App.js
+===================================================================
+diff --git a/src/App.js b/src/App.js
+deleted file mode 100644
+--- a/src/App.js	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ /dev/null	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
+@@ -1,25 +0,0 @@
+-import logo from './logo.svg';
+-import './App.css';
+-
+-function App() {
+-  return (
+-    <div className="App">
+-      <header className="App-header">
+-        <img src={logo} className="App-logo" alt="logo" />
+-        <p>
+-          Edit <code>src/App.js</code> and save to reload.
+-        </p>
+-        <a
+-          className="App-link"
+-          href="https://reactjs.org"
+-          target="_blank"
+-          rel="noopener noreferrer"
+-        >
+-          Learn React
+-        </a>
+-      </header>
+-    </div>
+-  );
+-}
+-
+-export default App;
+Index: src/App.test.js
+===================================================================
+diff --git a/src/App.test.js b/src/App.test.js
+deleted file mode 100644
+--- a/src/App.test.js	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ /dev/null	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
+@@ -1,8 +0,0 @@
+-import { render, screen } from '@testing-library/react';
+-import App from './App';
+-
+-test('renders learn react link', () => {
+-  render(<App />);
+-  const linkElement = screen.getByText(/learn react/i);
+-  expect(linkElement).toBeInTheDocument();
+-});
+Index: src/App.css
+===================================================================
+diff --git a/src/App.css b/src/App.css
+deleted file mode 100644
+--- a/src/App.css	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ /dev/null	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
+@@ -1,38 +0,0 @@
+-.App {
+-  text-align: center;
+-}
+-
+-.App-logo {
+-  height: 40vmin;
+-  pointer-events: none;
+-}
+-
+-@media (prefers-reduced-motion: no-preference) {
+-  .App-logo {
+-    animation: App-logo-spin infinite 20s linear;
+-  }
+-}
+-
+-.App-header {
+-  background-color: #282c34;
+-  min-height: 100vh;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  font-size: calc(10px + 2vmin);
+-  color: white;
+-}
+-
+-.App-link {
+-  color: #61dafb;
+-}
+-
+-@keyframes App-logo-spin {
+-  from {
+-    transform: rotate(0deg);
+-  }
+-  to {
+-    transform: rotate(360deg);
+-  }
+-}
+Index: src/index.css
+===================================================================
+diff --git a/src/index.css b/src/index.css
+deleted file mode 100644
+--- a/src/index.css	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ /dev/null	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
+@@ -1,13 +0,0 @@
+-body {
+-  margin: 0;
+-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+-    sans-serif;
+-  -webkit-font-smoothing: antialiased;
+-  -moz-osx-font-smoothing: grayscale;
+-}
+-
+-code {
+-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+-    monospace;
+-}
+Index: .eslintcache
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.eslintcache b/.eslintcache
+new file mode 100644
+--- /dev/null	(date 1608408508021)
++++ b/.eslintcache	(date 1608408508021)
+@@ -0,0 +1,1 @@
++[{"C:\\Users\\Javik\\Projects\\Streamical\\musicmanager\\src\\index.js":"1","C:\\Users\\Javik\\Projects\\Streamical\\musicmanager\\src\\reportWebVitals.js":"2"},{"size":441,"mtime":1608408483535,"results":"3","hashOfConfig":"4"},{"size":362,"mtime":499162500000,"results":"5","hashOfConfig":"4"},{"filePath":"6","messages":"7","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"8"},"1ecwimn",{"filePath":"9","messages":"10","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"C:\\Users\\Javik\\Projects\\Streamical\\musicmanager\\src\\index.js",[],["11","12"],"C:\\Users\\Javik\\Projects\\Streamical\\musicmanager\\src\\reportWebVitals.js",[],{"ruleId":"13","replacedBy":"14"},{"ruleId":"15","replacedBy":"16"},"no-native-reassign",["17"],"no-negated-in-lhs",["18"],"no-global-assign","no-unsafe-negation"]
+\ No newline at end of file
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"musicmanager\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.11.6\",\r\n    \"@testing-library/react\": \"^11.2.2\",\r\n    \"@testing-library/user-event\": \"^12.6.0\",\r\n    \"react\": \"^17.0.1\",\r\n    \"react-dom\": \"^17.0.1\",\r\n    \"react-scripts\": \"4.0.1\",\r\n    \"web-vitals\": \"^0.2.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ b/package.json	(date 1608407687072)
+@@ -34,5 +34,8 @@
+       "last 1 firefox version",
+       "last 1 safari version"
+     ]
++  },
++  "devDependencies": {
++    "sass": "^1.30.0"
+   }
+ }
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1608407713566)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1608407713566)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
++  </profile>
++</component>
+\ No newline at end of file
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision dc6e78c0774167d899e19a25edd6f1f27ab6add7)
++++ b/package-lock.json	(date 1608407687073)
+@@ -14,6 +14,9 @@
+         "react-dom": "^17.0.1",
+         "react-scripts": "4.0.1",
+         "web-vitals": "^0.2.4"
++      },
++      "devDependencies": {
++        "sass": "^1.30.0"
+       }
+     },
+     "node_modules/@babel/code-frame": {
+@@ -4502,7 +4505,7 @@
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.1.0.tgz",
+       "integrity": "sha512-1Yj8h9Q+QDF5FzhMs/c9+6UntbD5MkRfRwac8DoEm9ZfUBZ7tZ55YcGVAzEe4bXsdQHEk+s9S5wsOKVdZrw0tQ==",
+-      "optional": true,
++      "devOptional": true,
+       "engines": {
+         "node": ">=8"
+       }
+@@ -4982,7 +4985,7 @@
+       "version": "3.4.3",
+       "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.4.3.tgz",
+       "integrity": "sha512-DtM3g7juCXQxFVSNPNByEC2+NImtBuxQQvWlHunpJIS5Ocr0lG306cC7FCi7cEA0fzmybPUIl4txBIobk1gGOQ==",
+-      "optional": true,
++      "devOptional": true,
+       "dependencies": {
+         "anymatch": "~3.1.1",
+         "braces": "~3.0.2",
+@@ -5005,6 +5008,7 @@
+       "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.1.3.tgz",
+       "integrity": "sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==",
+       "deprecated": "Please update to v 2.2.x",
++      "dev": true,
+       "hasInstallScript": true,
+       "optional": true,
+       "os": [
+@@ -9739,7 +9743,7 @@
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz",
+       "integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==",
+-      "optional": true,
++      "devOptional": true,
+       "dependencies": {
+         "binary-extensions": "^2.0.0"
+       },
+@@ -15945,7 +15949,7 @@
+       "version": "3.5.0",
+       "resolved": "https://registry.npmjs.org/readdirp/-/readdirp-3.5.0.tgz",
+       "integrity": "sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==",
+-      "optional": true,
++      "devOptional": true,
+       "dependencies": {
+         "picomatch": "^2.2.1"
+       },
+@@ -16905,6 +16909,21 @@
+       "resolved": "https://registry.npmjs.org/sanitize.css/-/sanitize.css-10.0.0.tgz",
+       "integrity": "sha512-vTxrZz4dX5W86M6oVWVdOVe72ZiPs41Oi7Z6Km4W5Turyz28mrXSJhhEBZoRtzJWIv3833WKVwLSDWWkEfupMg=="
+     },
++    "node_modules/sass": {
++      "version": "1.30.0",
++      "resolved": "https://registry.npmjs.org/sass/-/sass-1.30.0.tgz",
++      "integrity": "sha512-26EUhOXRLaUY7+mWuRFqGeGGNmhB1vblpTENO1Z7mAzzIZeVxZr9EZoaY1kyGLFWdSOZxRMAufiN2mkbO6dAlw==",
++      "devOptional": true,
++      "dependencies": {
++        "chokidar": ">=2.0.0 <4.0.0"
++      },
++      "bin": {
++        "sass": "sass.js"
++      },
++      "engines": {
++        "node": ">=8.9.0"
++      }
++    },
+     "node_modules/sass-loader": {
+       "version": "8.0.2",
+       "resolved": "https://registry.npmjs.org/sass-loader/-/sass-loader-8.0.2.tgz",
+@@ -24664,7 +24683,7 @@
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.1.0.tgz",
+       "integrity": "sha512-1Yj8h9Q+QDF5FzhMs/c9+6UntbD5MkRfRwac8DoEm9ZfUBZ7tZ55YcGVAzEe4bXsdQHEk+s9S5wsOKVdZrw0tQ==",
+-      "optional": true
++      "devOptional": true
+     },
+     "bindings": {
+       "version": "1.5.0",
+@@ -25062,7 +25081,7 @@
+       "version": "3.4.3",
+       "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.4.3.tgz",
+       "integrity": "sha512-DtM3g7juCXQxFVSNPNByEC2+NImtBuxQQvWlHunpJIS5Ocr0lG306cC7FCi7cEA0fzmybPUIl4txBIobk1gGOQ==",
+-      "optional": true,
++      "devOptional": true,
+       "requires": {
+         "anymatch": "~3.1.1",
+         "braces": "~3.0.2",
+@@ -25078,6 +25097,7 @@
+           "version": "2.1.3",
+           "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.1.3.tgz",
+           "integrity": "sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==",
++          "dev": true,
+           "optional": true
+         }
+       }
+@@ -28819,7 +28839,7 @@
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz",
+       "integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==",
+-      "optional": true,
++      "devOptional": true,
+       "requires": {
+         "binary-extensions": "^2.0.0"
+       }
+@@ -33618,7 +33638,7 @@
+       "version": "3.5.0",
+       "resolved": "https://registry.npmjs.org/readdirp/-/readdirp-3.5.0.tgz",
+       "integrity": "sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==",
+-      "optional": true,
++      "devOptional": true,
+       "requires": {
+         "picomatch": "^2.2.1"
+       }
+@@ -34368,6 +34388,15 @@
+       "resolved": "https://registry.npmjs.org/sanitize.css/-/sanitize.css-10.0.0.tgz",
+       "integrity": "sha512-vTxrZz4dX5W86M6oVWVdOVe72ZiPs41Oi7Z6Km4W5Turyz28mrXSJhhEBZoRtzJWIv3833WKVwLSDWWkEfupMg=="
+     },
++    "sass": {
++      "version": "1.30.0",
++      "resolved": "https://registry.npmjs.org/sass/-/sass-1.30.0.tgz",
++      "integrity": "sha512-26EUhOXRLaUY7+mWuRFqGeGGNmhB1vblpTENO1Z7mAzzIZeVxZr9EZoaY1kyGLFWdSOZxRMAufiN2mkbO6dAlw==",
++      "devOptional": true,
++      "requires": {
++        "chokidar": ">=2.0.0 <4.0.0"
++      }
++    },
+     "sass-loader": {
+       "version": "8.0.2",
+       "resolved": "https://registry.npmjs.org/sass-loader/-/sass-loader-8.0.2.tgz",
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1608408195320)
++++ b/.idea/vcs.xml	(date 1608408195320)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/assets/img/streamical_logo_light.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/streamical_logo_light.svg b/src/assets/img/streamical_logo_light.svg
+new file mode 100644
+--- /dev/null	(date 1584471263000)
++++ b/src/assets/img/streamical_logo_light.svg	(date 1584471263000)
+@@ -0,0 +1,1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1764.39 792.38"><defs><style>.cls-1{fill:#49155c;}.cls-2{fill:#662482;}.cls-3{fill:#fff;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="lilac1"><circle class="cls-1" cx="396.19" cy="396.19" r="396.19"/></g><g id="lilac2"><path class="cls-2" d="M396.19,0a394.34,394.34,0,0,0-205.1,57.15A370.32,370.32,0,0,0,98.5,302.64C98.5,508,264.93,674.38,470.24,674.38c125.06,0,235.69-61.75,303.07-156.43a395.79,395.79,0,0,0,19.07-121.76C792.38,177.38,615,0,396.19,0Z"/></g><g id="white"><path class="cls-3" d="M927.87,463.82c-29.09,0-44.25-20.21-44.25-40.21a6.39,6.39,0,0,1,6.47-6.47,6.51,6.51,0,0,1,6.46,6.47c0,13.13,9.7,27.27,31.32,27.27s31.52-14.14,31.52-27.27c0-17.58-12.52-22-32.73-27.89-17.78-5.25-40-11.51-40-37.18,0-18.58,14.15-37.38,41.22-37.38,27.28,0,41.42,18.8,41.42,37.38a6.47,6.47,0,1,1-12.93,0c0-11.72-8.89-24.65-28.49-24.65-19.39,0-28.29,12.93-28.29,24.65,0,15.16,11.52,19.2,30.72,24.86,18.59,5.45,42,12.12,42,40.21C972.33,443.61,957,463.82,927.87,463.82Z"/><path class="cls-3" d="M1041.83,445.63a6.41,6.41,0,0,1,.81,9.09,26.21,26.21,0,0,1-46.07-17V367.43h-5.86a6.36,6.36,0,0,1,0-12.72h5.86V334.1a6.51,6.51,0,0,1,6.47-6.47,6.38,6.38,0,0,1,6.46,6.47v20.61h22.84a6.36,6.36,0,1,1,0,12.72H1009.5v70.32a13.28,13.28,0,0,0,13.34,13.13,12.55,12.55,0,0,0,9.9-4.64A6.42,6.42,0,0,1,1041.83,445.63Z"/><path class="cls-3" d="M1106.69,361a6.38,6.38,0,0,1-6.46,6.46c-17.79,0-31.32,14.55-31.32,33.75v56.17a6.37,6.37,0,1,1-12.73,0V361a6.37,6.37,0,0,1,12.73,0v6.67a43.07,43.07,0,0,1,31.32-12.93A6.33,6.33,0,0,1,1106.69,361Z"/><path class="cls-3" d="M1157.21,463.82c-29.5,0-51.53-23.44-51.53-54.56,0-14.75,4.85-28.29,13.74-38.39,9.3-10.51,22.43-16.16,36.78-16.16,28.89,0,49.7,22.83,49.7,54.55a6.51,6.51,0,0,1-6.46,6.47h-80.62c2.82,20.4,18.38,35.15,38.39,35.15,13.53,0,25.46-6.46,32.33-18.18a6.53,6.53,0,0,1,11.11,6.87A50.07,50.07,0,0,1,1157.21,463.82Zm-38.39-61h73.75c-2.43-21-16.57-35.36-36.37-35.36S1121.44,382,1118.82,402.79Z"/><path class="cls-3" d="M1320.27,361v96.38a6.47,6.47,0,1,1-12.93,0V446a49.85,49.85,0,0,1-38.8,17.78c-29.3,0-51.52-23.44-51.52-54.56s22.22-54.55,51.52-54.55a50.32,50.32,0,0,1,38.8,17.57V361a6.47,6.47,0,0,1,12.93,0Zm-12.93,48.29c0-23.84-16.57-41.83-38.8-41.83-22,0-38.59,18-38.59,41.83,0,23.64,16.57,41.62,38.59,41.62C1290.77,450.88,1307.34,432.9,1307.34,409.26Z"/><path class="cls-3" d="M1486.16,401.18v56.17a6.47,6.47,0,0,1-12.94,0V401.18c0-19.8-11.11-33.75-27.27-33.75-17.58,0-30.31,14.35-30.31,33.75v56.17a6.37,6.37,0,1,1-12.73,0V401.18c0-19.8-11.32-33.75-27.28-33.75-17.58,0-30.31,14.35-30.31,33.75v56.17a6.51,6.51,0,0,1-6.46,6.47,6.39,6.39,0,0,1-6.47-6.47V361a6.34,6.34,0,0,1,6.47-6.26,6.46,6.46,0,0,1,6.46,6.26v6.26a41.47,41.47,0,0,1,30.31-12.52c14.75,0,27.08,7.88,33.95,20.61a39.69,39.69,0,0,1,4.85-6.67c7.88-9.1,19.19-13.94,31.52-13.94C1469.18,354.71,1486.16,374.3,1486.16,401.18Z"/><path class="cls-3" d="M1508,330.66a7,7,0,0,1,7.07,6.87,6.86,6.86,0,0,1-7.07,6.87,7,7,0,0,1-7.07-6.87A7.12,7.12,0,0,1,1508,330.66Zm0,133.16a6.51,6.51,0,0,1-6.47-6.47V361a6.47,6.47,0,0,1,6.47-6.26,6.33,6.33,0,0,1,6.46,6.26v96.38A6.38,6.38,0,0,1,1508,463.82Z"/><path class="cls-3" d="M1579.71,463.82c-29.3,0-51.53-23.44-51.53-54.56s22.23-54.55,51.53-54.55c17,0,32.13,7.67,41.62,21.41a6.45,6.45,0,1,1-10.5,7.48,37.08,37.08,0,0,0-31.12-16.17c-22,0-38.8,18-38.8,41.83,0,23.64,16.77,41.62,38.8,41.62,12.93,0,23.84-5.65,31.12-16a6.39,6.39,0,1,1,10.5,7.28A49.81,49.81,0,0,1,1579.71,463.82Z"/><path class="cls-3" d="M1736.3,361v96.38a6.47,6.47,0,1,1-12.93,0V446a49.81,49.81,0,0,1-38.79,17.78c-29.3,0-51.53-23.44-51.53-54.56s22.23-54.55,51.53-54.55a50.28,50.28,0,0,1,38.79,17.57V361a6.47,6.47,0,0,1,12.93,0Zm-12.93,48.29c0-23.84-16.57-41.83-38.79-41.83-22,0-38.6,18-38.6,41.83,0,23.64,16.57,41.62,38.6,41.62C1706.8,450.88,1723.37,432.9,1723.37,409.26Z"/><path class="cls-3" d="M1764.39,327.63V457.35a6.47,6.47,0,1,1-12.93,0V327.63a6.47,6.47,0,1,1,12.93,0Z"/><rect class="cls-3" x="362.39" y="269.16" width="67.61" height="26.06"/><rect class="cls-3" x="362.39" y="167.47" width="67.61" height="75.75"/><path class="cls-3" d="M461.74,463.24V414.06H430v-92.9H362.39v92.9H330.64v49.18H304V781.6s38.37,10.78,92.2,10.78c54.95,0,92.2-10.78,92.2-10.78V463.24Z"/></g></g></svg>
+\ No newline at end of file
+Index: src/assets/img/streamical_logo_dark.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/streamical_logo_dark.svg b/src/assets/img/streamical_logo_dark.svg
+new file mode 100644
+--- /dev/null	(date 1584471440000)
++++ b/src/assets/img/streamical_logo_dark.svg	(date 1584471440000)
+@@ -0,0 +1,1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1764.39 792.38"><defs><style>.cls-1{fill:#49155c;}.cls-2{fill:#662482;}.cls-3{fill:#fff;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="lilac1"><circle class="cls-1" cx="396.19" cy="396.19" r="396.19"/></g><g id="lilac2"><path class="cls-2" d="M396.19,0a394.34,394.34,0,0,0-205.1,57.15A370.32,370.32,0,0,0,98.5,302.64C98.5,508,264.93,674.38,470.24,674.38c125.06,0,235.69-61.75,303.07-156.43a395.79,395.79,0,0,0,19.07-121.76C792.38,177.38,615,0,396.19,0Z"/></g><g id="white"><path d="M927.87,463.82c-29.09,0-44.25-20.21-44.25-40.21a6.39,6.39,0,0,1,6.47-6.47,6.51,6.51,0,0,1,6.46,6.47c0,13.13,9.7,27.27,31.32,27.27s31.52-14.14,31.52-27.27c0-17.58-12.52-22-32.73-27.89-17.78-5.25-40-11.51-40-37.18,0-18.58,14.15-37.38,41.22-37.38,27.28,0,41.42,18.8,41.42,37.38a6.47,6.47,0,1,1-12.93,0c0-11.72-8.89-24.65-28.49-24.65-19.39,0-28.29,12.93-28.29,24.65,0,15.16,11.52,19.2,30.72,24.86,18.59,5.45,42,12.12,42,40.21C972.33,443.61,957,463.82,927.87,463.82Z"/><path d="M1041.83,445.63a6.41,6.41,0,0,1,.81,9.09,26.21,26.21,0,0,1-46.07-17V367.43h-5.86a6.36,6.36,0,0,1,0-12.72h5.86V334.1a6.51,6.51,0,0,1,6.47-6.47,6.38,6.38,0,0,1,6.46,6.47v20.61h22.84a6.36,6.36,0,1,1,0,12.72H1009.5v70.32a13.28,13.28,0,0,0,13.34,13.13,12.55,12.55,0,0,0,9.9-4.64A6.42,6.42,0,0,1,1041.83,445.63Z"/><path d="M1106.69,361a6.38,6.38,0,0,1-6.46,6.46c-17.79,0-31.32,14.55-31.32,33.75v56.17a6.37,6.37,0,1,1-12.73,0V361a6.37,6.37,0,0,1,12.73,0v6.67a43.07,43.07,0,0,1,31.32-12.93A6.33,6.33,0,0,1,1106.69,361Z"/><path d="M1157.21,463.82c-29.5,0-51.53-23.44-51.53-54.56,0-14.75,4.85-28.29,13.74-38.39,9.3-10.51,22.43-16.16,36.78-16.16,28.89,0,49.7,22.83,49.7,54.55a6.51,6.51,0,0,1-6.46,6.47h-80.62c2.82,20.4,18.38,35.15,38.39,35.15,13.53,0,25.46-6.46,32.33-18.18a6.53,6.53,0,0,1,11.11,6.87A50.07,50.07,0,0,1,1157.21,463.82Zm-38.39-61h73.75c-2.43-21-16.57-35.36-36.37-35.36S1121.44,382,1118.82,402.79Z"/><path d="M1320.27,361v96.38a6.47,6.47,0,1,1-12.93,0V446a49.85,49.85,0,0,1-38.8,17.78c-29.3,0-51.52-23.44-51.52-54.56s22.22-54.55,51.52-54.55a50.32,50.32,0,0,1,38.8,17.57V361a6.47,6.47,0,0,1,12.93,0Zm-12.93,48.29c0-23.84-16.57-41.83-38.8-41.83-22,0-38.59,18-38.59,41.83,0,23.64,16.57,41.62,38.59,41.62C1290.77,450.88,1307.34,432.9,1307.34,409.26Z"/><path d="M1486.16,401.18v56.17a6.47,6.47,0,0,1-12.94,0V401.18c0-19.8-11.11-33.75-27.27-33.75-17.58,0-30.31,14.35-30.31,33.75v56.17a6.37,6.37,0,1,1-12.73,0V401.18c0-19.8-11.32-33.75-27.28-33.75-17.58,0-30.31,14.35-30.31,33.75v56.17a6.51,6.51,0,0,1-6.46,6.47,6.39,6.39,0,0,1-6.47-6.47V361a6.34,6.34,0,0,1,6.47-6.26,6.46,6.46,0,0,1,6.46,6.26v6.26a41.47,41.47,0,0,1,30.31-12.52c14.75,0,27.08,7.88,33.95,20.61a39.69,39.69,0,0,1,4.85-6.67c7.88-9.1,19.19-13.94,31.52-13.94C1469.18,354.71,1486.16,374.3,1486.16,401.18Z"/><path d="M1508,330.66a7,7,0,0,1,7.07,6.87,6.86,6.86,0,0,1-7.07,6.87,7,7,0,0,1-7.07-6.87A7.12,7.12,0,0,1,1508,330.66Zm0,133.16a6.51,6.51,0,0,1-6.47-6.47V361a6.47,6.47,0,0,1,6.47-6.26,6.33,6.33,0,0,1,6.46,6.26v96.38A6.38,6.38,0,0,1,1508,463.82Z"/><path d="M1579.71,463.82c-29.3,0-51.53-23.44-51.53-54.56s22.23-54.55,51.53-54.55c17,0,32.13,7.67,41.62,21.41a6.45,6.45,0,1,1-10.5,7.48,37.08,37.08,0,0,0-31.12-16.17c-22,0-38.8,18-38.8,41.83,0,23.64,16.77,41.62,38.8,41.62,12.93,0,23.84-5.65,31.12-16a6.39,6.39,0,1,1,10.5,7.28A49.81,49.81,0,0,1,1579.71,463.82Z"/><path d="M1736.3,361v96.38a6.47,6.47,0,1,1-12.93,0V446a49.81,49.81,0,0,1-38.79,17.78c-29.3,0-51.53-23.44-51.53-54.56s22.23-54.55,51.53-54.55a50.28,50.28,0,0,1,38.79,17.57V361a6.47,6.47,0,0,1,12.93,0Zm-12.93,48.29c0-23.84-16.57-41.83-38.79-41.83-22,0-38.6,18-38.6,41.83,0,23.64,16.57,41.62,38.6,41.62C1706.8,450.88,1723.37,432.9,1723.37,409.26Z"/><path d="M1764.39,327.63V457.35a6.47,6.47,0,1,1-12.93,0V327.63a6.47,6.47,0,1,1,12.93,0Z"/><rect class="cls-3" x="362.39" y="269.16" width="67.61" height="26.06"/><rect class="cls-3" x="362.39" y="167.47" width="67.61" height="75.75"/><path class="cls-3" d="M461.74,463.24V414.06H430v-92.9H362.39v92.9H330.64v49.18H304V781.6s38.37,10.78,92.2,10.78c54.95,0,92.2-10.78,92.2-10.78V463.24Z"/></g></g></svg>
+\ No newline at end of file
+Index: src/assets/img/streamical_icon.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/streamical_icon.svg b/src/assets/img/streamical_icon.svg
+new file mode 100644
+--- /dev/null	(date 1584472072000)
++++ b/src/assets/img/streamical_icon.svg	(date 1584472072000)
+@@ -0,0 +1,1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.38 792.38"><defs><style>.cls-1{fill:#49155c;}.cls-2{fill:#662482;}.cls-3{fill:#fff;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="lilac1"><circle class="cls-1" cx="396.19" cy="396.19" r="396.19"/></g><g id="lilac2"><path class="cls-2" d="M396.19,0a394.34,394.34,0,0,0-205.1,57.15A370.32,370.32,0,0,0,98.5,302.64C98.5,508,264.93,674.38,470.24,674.38c125.06,0,235.69-61.75,303.07-156.43a395.79,395.79,0,0,0,19.07-121.76C792.38,177.38,615,0,396.19,0Z"/></g><g id="white"><rect class="cls-3" x="362.39" y="269.16" width="67.61" height="26.06"/><rect class="cls-3" x="362.39" y="167.47" width="67.61" height="75.75"/><path class="cls-3" d="M461.74,463.24V414.06H430v-92.9H362.39v92.9H330.64v49.18H304V781.6s38.37,10.78,92.2,10.78c54.95,0,92.2-10.78,92.2-10.78V463.24Z"/></g></g></svg>
+\ No newline at end of file
+diff --git a/src/assets/scss/musicmanager.scss b/src/assets/scss/musicmanager.scss
+new file mode 100644
+diff --git a/src/header.js b/src/header.js
+new file mode 100644
