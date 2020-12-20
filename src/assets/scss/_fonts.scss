@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'),
-    url('#{$fontPath}Open_Sans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+    url('#{$fontPath}/Open_Sans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
     url('#{$fontPath}/Open_Sans/OpenSans-ExtraBoldItalic.woff') format('woff');
     font-weight: 800;
     font-style: italic;
