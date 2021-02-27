@@ -1,0 +1,34 @@
+Release (Album)
+    [AlbumObject]
+        - ID
+        - Albumtitle
+        - Artists
+            [ArtistObject]
+                - ID
+                - ArtistName
+        - Cover Image
+        - Genres
+            [GenreObject]
+                - Genretext
+                - Subgenretext
+        - Releasedate
+        - Songs
+            [SongObject]
+                - ID
+                - Songtitle
+                - Artists
+                    [ArtistObject]
+                        - ID
+                        - ArtistName
+                - Audiofile
+                - Genres
+                    [GenreObject]
+                        - Genretext
+                        - Subgenretext
+                - LicenseID
+
+License
+    - ID
+    - Licensor
+    - Licensee
+    - LicenseArchiveFile
