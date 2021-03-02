@@ -1,0 +1,106 @@
+parameters:
+    kernel.secret: yoursecretshouldbehere
+    app.path: '../..'
+
+framework:
+    form: false
+    assets: false
+    session: false
+    translator: false
+    php_errors:
+        log: false
+
+#
+# DBAL configuration
+#
+dbal:
+    connections:
+        main:
+            driver: "%env(DBAL_DRIVER)%"
+            host: "%env(DBAL_HOST)%"
+            port: "%env(int:DBAL_PORT)%"
+            user: "%env(DBAL_USER)%"
+            password: "%env(DBAL_PASSWORD)%"
+            dbname: "%env(DBAL_DATABASE)%"
+
+#
+# Event bus configuration
+#
+event_bus:
+    exchanges:
+        events: "%env(AMQP_EVENTS_EXCHANGE)%"
+    router:
+        _all: events
+    async_pass_through: false
+    async_adapter:
+        adapter: amqp
+        amqp:
+            host: "%env(AMQP_HOST)%"
+
+
+#
+# Preload Bundle configuration
+#
+preload:
+    services:
+        "Domain\\ValueRepository": ~
+        "App\\Controller\\ViewValuesController": ~
+        "amqp.event_bus_channel": ~
+        "amqp.command_bus_channel": ~
+    presets:
+        - "@symfony"
+        - "@drift"
+        - "@react"
+        - "Drift\\Twig\\Preset\\TwigPreset"
+
+websocket:
+    routes:
+        events:
+            path: /events
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        bind:
+            string $websocketPort: "%env(WEBSOCKET_PORT)%"
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: "%app.path%/src/Controller"
+        tags: ['controller.service_arguments']
+
+
+    # Query and Command handlers are autowired under the Domain namespace. With
+    # these simple tags, we are defining that all classes found there are
+    # defined as handlers, taking the default method class parameter as usable
+    # class to handle
+    Domain\QueryHandler\:
+        resource: "%app.path%/src/Domain/QueryHandler"
+        tags: ['query_handler']
+
+    Domain\CommandHandler\:
+        resource: "%app.path%/src/Domain/CommandHandler"
+        tags: ['command_handler']
+
+    Domain\EventListener\:
+        resource: "%app.path%/src/Domain/EventListener"
+
+
+    # Infrastructure classes are defined under \Infrastructure namespace. You
+    # can find the alias in composer.json under the PSR-4 section. Autowiring is
+    # used here to create all services, and final alias is generated after all.
+    # Feel free to comment the unused adapter for performance increasing.
+    Infrastructure\DBAL\:
+        resource: "%app.path%/src/DBAL"
+        tags:
+            - {name: preload, method: loadAll}
+
+    Domain\ValueRepository:
+        alias: Infrastructure\DBAL\DBALValueRepository
+
+    # Websockets integration
+    App\Websocket\:
+        resource: "%app.path%/src/Websocket"

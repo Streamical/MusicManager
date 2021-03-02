@@ -1,0 +1,25 @@
+#
+# API
+#
+put:
+  path: /values/{key}
+  controller: App\Controller\PutValueController
+  methods: ["PUT"]
+
+delete:
+  path: /values/{key}
+  controller: App\Controller\DeleteValueController
+  methods: ["DELETE"]
+
+get:
+  path: /values/{key}
+  controller: App\Controller\GetValueController
+  methods: ["GET"]
+
+#
+# Public
+#
+view_values:
+  path: /
+  controller: App\Controller\IndexController
+  methods: GET
