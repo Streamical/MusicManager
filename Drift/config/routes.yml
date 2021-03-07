@@ -1,5 +1,5 @@
 #
-# API
+# Example API
 #
 put:
   path: /values/{key}
@@ -17,9 +17,27 @@ get:
   methods: ["GET"]
 
 #
+# Example API
+#
+login:
+  path: /login/
+  controller: App\Controller\AuthController::login
+  methods: ["POST"]
+
+login:
+  path: /logout/
+  controller: App\Controller\AuthController::login
+  methods: ["POST"]
+
+#
 # Public
 #
 view_values:
   path: /
   controller: App\Controller\IndexController
+  methods: GET
+
+test:
+  path: /test
+  controller: App\Controller\TestController
   methods: GET

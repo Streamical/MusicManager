@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10d131260b84b0adda4d12ab031c7a6f",
+    "content-hash": "2c2c7ec9d54f169dd0bd66ec3afce230",
     "packages": [
         {
             "name": "alecrabbit/php-cli-snake",

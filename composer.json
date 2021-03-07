@@ -34,7 +34,8 @@
         "drift/amqp-bundle": "^0.1.0",
         "react/mysql": "^0.5.4",
 
-        "symfony/thanks":  "^1.2.5"
+        "symfony/thanks":  "^1.2.5",
+        "react/promise": "^2.8"
     },
 
     "autoload": {
